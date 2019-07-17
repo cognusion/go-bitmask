@@ -3,6 +3,7 @@ package bitmask
 import (
 	. "github.com/smartystreets/goconvey/convey"
 
+	"fmt"
 	"testing"
 )
 
@@ -41,7 +42,7 @@ func ExampleBitMask() {
 		panic("Ohhhh noooooo!")
 	}
 
-	if flags.Set(Alpha) {
+	if flags.IsSet(Alpha) {
 		fmt.Println("Alpha!")
 	}
 	// Output: Alpha!
