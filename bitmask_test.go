@@ -24,7 +24,7 @@ const (
 	Gamma8
 )
 
-func ExampleExamples_output() {
+func ExampleBitMask() {
 
 	const (
 		Alpha BitMask = 1 << iota
@@ -40,6 +40,11 @@ func ExampleExamples_output() {
 	if flags.IsSet(Gamma) {
 		panic("Ohhhh noooooo!")
 	}
+
+	if flags.Set(Alpha) {
+		fmt.Println("Alpha!")
+	}
+	// Output: Alpha!
 }
 
 func TestRawBitMask(t *testing.T) {
