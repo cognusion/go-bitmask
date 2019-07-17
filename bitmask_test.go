@@ -24,7 +24,7 @@ const (
 	Gamma8
 )
 
-func ExampleExamples() {
+func ExampleExamples_output() {
 
 	const (
 		Alpha BitMask = 1 << iota
